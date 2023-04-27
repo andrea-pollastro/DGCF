@@ -1,1 +1,1 @@
-# DGCF
+# Dynamic Graph Convolutional Filters
