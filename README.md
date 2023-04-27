@@ -1,6 +1,6 @@
 # Dynamic Graph Convolutional Filters
 
-Implementation of the Dynamic Graph Convolutional Filter (DGCF) layer presented in <i>"Adaptive Filters in Graph Convolutional Neural Networks"</i> (<a href="https://arxiv.org/pdf/2105.10377.pdf">arXiv preprint arXiv:2105.10377</a>)
+PyTorch implementation of the Dynamic Graph Convolutional Filter (DGCF) layer presented in <i>"Adaptive Filters in Graph Convolutional Neural Networks"</i> (<a href="https://arxiv.org/pdf/2105.10377.pdf">arXiv preprint arXiv:2105.10377</a>)
 
 Params:
 - `n_nodes`, int: number of nodes of the input graphs
