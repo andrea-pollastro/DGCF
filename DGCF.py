@@ -9,7 +9,7 @@ class DGCF(nn.Module):
     params:
     - n_nodes, int: number of nodes of the input graphs
     - kernel_size, int: number of neighbors for convolution
-    - neighborhoods, torch.Tensor: matrix with dimensions (n_nodes, kernel_size) where the entry [Q]_ij 
+    - neighborhoods, torch.Tensor: matrix with dimensions (n_nodes, kernel_size) where the entry N_ij 
             denotes for the i's j-th closest neighbor.
     - in_channels, int: number of input channels for each node
     - out_channels, int: number of output channels for each node
