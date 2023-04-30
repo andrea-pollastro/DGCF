@@ -17,10 +17,11 @@ Params:
 - - `dynamic`, whether the biases are generated from the filter_generating_network. In such case, the biases will be determined by the last [+ out_channels] weights generated from the filter_generating network.
 - `bias_initializer`, Callable: Initializer for the bias vector (zeros by default. Use nn.init.* inizializations)
 
-Input shape: `(batch_size, n_nodes, in_channels)`
+Input shape: `(batch_size, n_nodes, in_channels)`<br>
 Output shape: `(batch_size, n_nodes, out_channels)`
 
-Example of usage:
+## Usage
+
 ``` python
 >>> ...
 >>> # Supposing to have a batch of 20 graphs with n_nodes=5 and in_channels=3 per node
