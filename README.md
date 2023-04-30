@@ -24,7 +24,7 @@ Output shape: `(batch_size, n_nodes, out_channels)`
 
 ``` python
 >>> ...
->>> # Supposing to have a batch of 20 graphs with n_nodes=5 and in_channels=3 per node
+>>> # Let's consider 'x' as a batch of 20 graphs with 5 nodes and 3 input channels per node
 >>> ...
 >>> print(x.size())
 torch.Size([20, 5, 3])
