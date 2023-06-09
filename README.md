@@ -40,3 +40,6 @@ torch.Size([20, 5, 3])
 >>> print(y.size())
 torch.Size([20, 5, 1])
 ```
+
+## Example of usage on MNIST
+An example of usage is reported in the `example_mnist.py` script, where it is reported the setting used for the experiments made on the MNIST dataset reported in Section 4.1. Additionally, a pretrained model on MNIST is also uploaded (`pretrained_MNIST.pt`).
