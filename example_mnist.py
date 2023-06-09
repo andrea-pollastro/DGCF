@@ -144,6 +144,6 @@ def accuracy(net: nn.Sequential, dataloader: torch.utils.data.DataLoader) -> flo
         n_samples += len(x)
     return (correct / n_samples)*100
 
-print(f'Training accuracy: {accuracy(net, training_dataloader):.5f}') 
-print(f'Validation accuracy: {accuracy(net, validation_dataloader):.5f}') 
-print(f'Test accuracy: {accuracy(net, test_dataloader):.5f}') 
+print(f'Training accuracy: {accuracy(net, training_dataloader):.2f}') 
+print(f'Validation accuracy: {accuracy(net, validation_dataloader):.2f}') 
+print(f'Test accuracy: {accuracy(net, test_dataloader):.2f}') 
