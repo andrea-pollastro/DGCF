@@ -2,7 +2,6 @@
 This file contains an example of application of the DGCF layer on the MNIST dataset.
 Images were converted in graphs as reported in on the paper.
 """
-
 from keras.datasets import mnist
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import normalize
@@ -18,14 +17,16 @@ import torch.nn as nn
 N_EPOCHS = 10
 BATCH_SIZE = 128
 KERNEL_SIZE = 6
-N_CLASSES = 10
 CORR_THRESHOLD = 0.5
-IN_CHANNELS = 1
 OUT_CHANNELS = 4
 OUT_CHANNELS_STATIC_CONV = 20
 FGN_HIDDEN_NODES = 200
 LR = 0.001
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+# dataset parameters
+N_CLASSES = 10
+IN_CHANNELS = 1
 
 # dataset loading
 print("Loading MNIST dataset...")
@@ -124,7 +125,7 @@ for epoch in range(N_EPOCHS):
 
     print(f'Epoch {epoch}\tTraining loss: {running_training_loss:.5f}\tValidation loss: {running_val_loss:.5f}')
 
-    # model update
+    # best model update
     if running_val_loss < best_loss:
         best_loss = running_val_loss
         best_net = deepcopy(net)
