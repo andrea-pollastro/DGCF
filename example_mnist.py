@@ -1,3 +1,8 @@
+"""
+This file contains an example of application of the DGCF layer on the MNIST dataset.
+Images were converted in graphs as reported in on the paper.
+"""
+
 from keras.datasets import mnist
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import normalize
