@@ -43,3 +43,16 @@ torch.Size([20, 5, 1])
 
 ## Example of usage on MNIST
 An example of usage is reported in the `example_mnist.py` script, where it is reported the setting used for the experiments made on the MNIST dataset reported in Section 4.1. Additionally, a pretrained model on MNIST is also uploaded (`pretrained_MNIST.pt`).
+
+## Citing
+```
+@article{apicella2023adaptive,
+  title={Adaptive filters in graph convolutional neural networks},
+  author={Apicella, Andrea and Isgr{\`o}, Francesco and Pollastro, Andrea and Prevete, Roberto},
+  journal={Pattern Recognition},
+  volume={144},
+  pages={109867},
+  year={2023},
+  publisher={Elsevier}
+}
+```
